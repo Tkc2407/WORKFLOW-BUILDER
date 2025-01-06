@@ -1,8 +1,69 @@
-# React + Vite
+# Workflow Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A simple and intuitive tool for creating and managing workflows.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+
+## ✨ Features
+
+- 🎨 Intuitive drag-and-drop interface
+- 📦 Pre-built workflow components
+- 🔄 Real-time validation
+- 🔌 Easy integration with existing systems
+- 📱 Responsive design
+- 🎮 Custom actions support
+- 🔄 Version control
+
+## 🚀 Installation
+
+```bash
+# Using npm
+npm install workflow-builder
+
+# Using yarn
+yarn add workflow-builder
+
+# Using pnpm
+pnpm add workflow-builder
+```
+
+
+
+### API Methods
+
+#### Core Methods
+
+- `addNode(config)`: Add a new node
+- `removeNode(nodeId)`: Remove a node
+- `connect(sourceId, targetId)`: Connect nodes
+- `disconnect(connectionId)`: Remove connection
+- `export()`: Export workflow as JSON
+- `import(data)`: Import workflow from JSON
+
+#### Utility Methods
+
+- `validate()`: Validate current workflow
+- `clear()`: Clear all nodes and connections
+- `getNode(nodeId)`: Get node by ID
+- `getNodes()`: Get all nodes
+- `getConnections()`: Get all connections
+
+### Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/workflow-builder.git
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Run tests
+npm test
+```
