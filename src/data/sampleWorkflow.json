@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "input",
+      "data": { "label": "Start" },
+      "position": { "x": 250, "y": 0 }
+    },
+    {
+      "id": "2",
+      "data": { "label": "Task 1" },
+      "position": { "x": 250, "y": 150 }
+    }
+  ],
+  "edges": [{ "id": "e1-2", "source": "1", "target": "2", "animated": true }]
+}
